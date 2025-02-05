@@ -5,6 +5,6 @@ function calculateProfit(costPrice, sellingPrice, unitsSold) {
     return profit;
 }
 let profit = calculateProfit(20, 30, 100) //costPrice, sellingPrice, and unitsSold numbers
-    //logged "task 1" and total profit
+    //logged "Task 1" and total profit
 console.log("Task 1")
-console.log("   Business Total Profit: $", profit) 
+console.log("   Business Total Profit: $", profit)
