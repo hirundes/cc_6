@@ -35,5 +35,21 @@ let bonus = calculateBonus(5000, "Good"); //defining bonus with salary and perfo
 console.log("Task 3");
 console.log("   Bonus: $", bonus);
 
+//Task 4 - Subscription Pricing Mode
+function calculateSubscriptionCost(plan, months, discount = 0) { //Function calculateSubscriptionCost
+    let planPricing = {        //Defining basic, premium, and enterprise
+        "Basic": 10,
+        "Premium": 20,
+        "Enterprise": 50
+    }
+    return (planPricing[plan] * months) - discount      //Actual calculation subscription cost
+};
+
+    //Defined plan, months, and discount
+let costs = (calculateSubscriptionCost("Basic", 6, 10)); 
+    //Logged "Task 4, and costs"
+console.log("Task 4");
+console.log("   Subscription Costs: $", costs);
+
 
 
