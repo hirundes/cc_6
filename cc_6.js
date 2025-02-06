@@ -6,7 +6,7 @@ function calculateProfit(costPrice, sellingPrice, unitsSold) {
 let profit = calculateProfit(20, 30, 100); //costPrice, sellingPrice, and unitsSold numbers
     //logged "Task 1" and total profit
 console.log("Task 1");
-console.log("   Business Total Profit: $", profit);
+console.log(`   Business Total Profit: $${profit}`);
 
 //Task 2 - Sales Tax Computation
     //function calculateSalesTax
@@ -16,7 +16,7 @@ function calculateSalesTax(amount, taxRate) {
 let salesTax = calculateSalesTax(100, 0.07); //amount and taxRate
     //logged "Task 2" and sales Tax
 console.log("Task 2");
-console.log("   Sale Tax: $", salesTax);
+console.log(`   Sales Tax: $${salesTax}`);
 
 //Task 3 - Employee Bonus Calculation
     //arrow function for calculateBonus
@@ -33,7 +33,7 @@ const calculateBonus = (salary, performanceRating) => {
 let bonus = calculateBonus(5000, "Good"); //defining bonus with salary and performance rating
 //Logged "Task 3" and Bonus
 console.log("Task 3");
-console.log("   Bonus: $", bonus);
+console.log(`   Bonus: $${bonus}`);;
 
 //Task 4 - Subscription Pricing Mode
 function calculateSubscriptionCost(plan, months, discount = 0) { //Function calculateSubscriptionCost
@@ -49,7 +49,13 @@ function calculateSubscriptionCost(plan, months, discount = 0) { //Function calc
 let costs = (calculateSubscriptionCost("Basic", 6, 10)); 
     //Logged "Task 4, and costs"
 console.log("Task 4");
-console.log("   Subscription Costs: $", costs);
+console.log(`   Subscription Costs: $${costs}`);
 
+function convertCurrency(amount, exchangeRate) {
+    return amount * exchangeRate
+};
+
+let Currency = convertCurrency(100, 1.1);
+console.log (`   Converted Currency: $${Currency}`);
 
 
