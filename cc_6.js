@@ -60,3 +60,18 @@ let Currency = convertCurrency(100, 1.1);   //Defining currency and test data
 //Logged "Task 5" and currency
 console.log("Task 5");
 console.log (`   Converted Currency: $${Currency}`);
+
+//Task 6 - Higher-Order Function for Bulk Orders
+let orders = [200, 600, 1200, 250, 800]; // Declare array orders
+function applyBulkDiscount(orders, discountFunction) {  //Higher-order function applyBulkDiscount
+    return orders.map(discountFunction)     //Return discountFunction
+};
+let discount10Percent = (amount) => amount > 500  ? amount * 0.9: amount; //Declaring discount10Percent so > 500 = 0.10 discount.
+let discountPurchases = applyBulkDiscount(orders, discount10Percent);
+    //Logged "Task 6" and Discount Purchases
+console.log("Task 6");
+console.log(`   Discount Purchases: ${discountPurchases}`);
+
+
+
+
