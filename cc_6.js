@@ -51,11 +51,12 @@ let costs = (calculateSubscriptionCost("Basic", 6, 10));
 console.log("Task 4");
 console.log(`   Subscription Costs: $${costs}`);
 
-function convertCurrency(amount, exchangeRate) {
-    return amount * exchangeRate
+//Task 5 - Currency Conversion
+function convertCurrency(amount, exchangeRate) { //Function convertCurrency
+    return amount * exchangeRate    //Returns converted amount
 };
 
-let Currency = convertCurrency(100, 1.1);
+let Currency = convertCurrency(100, 1.1);   //Defining currency and test data
+//Logged "Task 5" and currency
+console.log("Task 5");
 console.log (`   Converted Currency: $${Currency}`);
-
-
