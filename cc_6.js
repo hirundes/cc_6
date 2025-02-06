@@ -72,6 +72,16 @@ let discountPurchases = applyBulkDiscount(orders, discount10Percent);
 console.log("Task 6");
 console.log(`   Discount Purchases: ${discountPurchases}`);
 
+//Task 7 - Business Expense Tracker
+function createExpenseTracker(ExpenseTracker) {     //Function createExpenseTracker
+    return function(amount) {   // Returns another function(amount)
+    return amount * 1   //Returns amount
+}
+};
 
+let tracker = createExpenseTracker(); //Defining tracker with createExpenseTracker
+//Logged "Task 7" and Expense Tracker
+console.log("Task 7");
+console.log(`   Expense Tracker: $${tracker(200)}`);
 
 
